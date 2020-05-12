@@ -7,21 +7,22 @@ class Convertebase extends Command {
     // add --version flag to show CLI version
     version: flags.version({char: 'v'}),
     help: flags.help({char: 'h'}),
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: 'name to print'}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
+    // flag to get the input value
+    name: flags.string({char: 'n', description: 'Input Number'}),
+    inBase: flags.string({char: 'i', description: 'Input Base'}),
+    outBase: flags.string({char: 'o', description: 'Output Base'}),
   }
 
-  static args = [{name: 'file'}]
-
   async run() {
-    const {args, flags} = this.parse(Convertebase)
-
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from ./src/index.ts`)
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
+    const {flags} = this.parse(Convertebase)
+    const number = flags.name
+    const inBase = flags.inBase
+    const outBase = flags.outBase
+    const response = numberConverter(number, inBase, outBase)
+    if (response instanceof Error) {
+      console.error(response.message)
+    } else {
+      console.info(response)
     }
   }
 }
