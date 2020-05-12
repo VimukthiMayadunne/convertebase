@@ -1,7 +1,7 @@
 {
   "name": "convertebase",
   "description": "Convert intiger numbers to a given base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "VimukthiMayadunne @VimukthiMayadunne",
   "bin": {
     "convertebase": "./bin/run"
@@ -37,7 +37,16 @@
   ],
   "homepage": "https://github.com/VimukthiMayadunne/convertebase",
   "keywords": [
-    "oclif"
+    "oclif",    
+    "roman numerals",
+    "binary",
+    "octal",
+    "decimal",
+    "hexadecimal",
+    "number",
+    "convert",
+    "cli",
+    "command line"
   ],
   "license": "MIT",
   "main": "lib/index.js",

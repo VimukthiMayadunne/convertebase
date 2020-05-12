@@ -1,5 +1,8 @@
 export function numberConverter(num: any,  inbase: any, outbase: any) {
   const reg = /^[a-zA-Z0-9]+$/i
+  if ( num == null || outbase == null){
+    return new Error('Both Number and output base are must required')
+  }
   if (inbase <= 10) {
     if (num != Math.floor(num)) {
       return new Error('No number Found')
