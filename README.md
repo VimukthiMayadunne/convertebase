@@ -9,24 +9,47 @@ Convert intiger numbers to a given base
 [![License](https://img.shields.io/npm/l/convertebase.svg)](https://github.com/VimukthiMayadunne/convertebase/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+* [Pre-requisite](#pre-requisite)
+* [Installation](#installation)
+* [Runnig the Cli-Tool](#runnig-the-cli-tool)
+* [Development Guide](#development-guide)
 <!-- tocstop -->
-# Usage
-<!-- usage -->
-```sh-session
-$ npm install -g convertebase
-$ convertebase COMMAND
-running command...
-$ convertebase (-v|--version|version)
-convertebase/0.0.1 linux-x64 node-v12.16.1
-$ convertebase --help [COMMAND]
-USAGE
-  $ convertebase COMMAND
-...
-```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
 
-<!-- commandsstop -->
+
+# Pre-requisite 
+- node.js
+
+
+# Installation
+You can install `convertebase` either through `npm` or by cloning the code from this GitHub repo.  This README covers the installation steps with `npm`.
+
+
+1) Run the following command  in the terminal 
+
+```bash
+$ npm install -g convertebase
+```
+
+         
+# Runnig the Cli-Tool
+
+
+Run the following command to retrive an accsess token 
+
+#### Example
+
+```bash
+
+$ convertebase -n={ number } -i={ Base of the input number } -o={ base required to convert the number } 
+
+$ convertebase -n=150 -i=10 -o=2 
+
+```
+Run `apimtoken -h` for help
+
+# Development Guide
+
+Clone or download the repository
+Run npm install to install all the required dependencies 
+
+Credits - oclif framework  https://oclif.io
