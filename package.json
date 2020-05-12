@@ -1,7 +1,7 @@
 {
   "name": "convertebase",
   "description": "Convert intiger numbers to a given base",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "VimukthiMayadunne @VimukthiMayadunne",
   "bin": {
     "convertebase": "./bin/run"
