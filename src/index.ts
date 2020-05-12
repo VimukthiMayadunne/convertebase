@@ -21,9 +21,9 @@ class Convertebase extends Command {
     const outBase = flags.outBase
     const response = numberConverter(number, inBase, outBase)
     if (response instanceof Error) {
-      console.error(response.message)
+      this.log(response.message)
     } else {
-      console.info(response)
+      this.log(response)
     }
   }
 }
