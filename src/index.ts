@@ -1,4 +1,5 @@
 import {Command, flags} from '@oclif/command'
+import {numberConverter} from './converter'
 
 class Convertebase extends Command {
   static description = 'describe the command here'
